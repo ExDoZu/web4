@@ -1,0 +1,12 @@
+.leftside {
+    float: left;
+    width: 50%;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+.rightside {
+    margin: auto;
+    text-align: center;
+}
+

@@ -1,0 +1,10 @@
+#graphic {
+    border: aqua 5px solid;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 1052px) {
+    #graphic {
+        margin: auto;
+    }
+}

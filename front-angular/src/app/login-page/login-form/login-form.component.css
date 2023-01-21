@@ -1,0 +1,51 @@
+
+app-login-form input {
+    width: 300px;
+    height: 20px;
+    background: #ffffff;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+app-login-form button {
+    width: 300px;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #000000;
+    background: rgb(50, 239, 240);
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+app-login-form button:hover {
+    background: #c56600;
+}
+
+app-login-form .alert {
+    color: red;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+app-login-form .successAlert {
+    color: green;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+}

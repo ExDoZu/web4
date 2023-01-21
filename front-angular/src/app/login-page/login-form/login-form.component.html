@@ -1,0 +1,54 @@
+<form (ngSubmit)="signIn()">
+    <div>
+        <input
+                placeholder="Логин"
+                type="text"
+                [formControl]="login"
+        />
+    </div>
+
+    <div *ngIf="login.invalid && login.touched"
+         class="alert">
+        <div *ngIf="login.errors?.['required']">
+            Логин не может быть пустым
+        </div>
+        <div *ngIf="login.errors?.['minlength']">
+            Логин должен быть не короче 3 символов
+        </div>
+    </div>
+
+    <div>
+        <input
+                placeholder="Пароль"
+                type="password"
+                [formControl]="password"
+        />
+    </div>
+
+    <div *ngIf="password.invalid && password.touched"
+         class="alert">
+        <div *ngIf="password.errors?.['required']">
+            Пароль не может быть пустым
+        </div>
+        <div *ngIf="password.errors?.['minlength']">
+            Пароль должен быть не короче 3 символов
+        </div>
+    </div>
+
+    <div *ngIf="loginError"
+         class="alert">
+        {{ loginErrorMessage }}
+    </div>
+    <div *ngIf="signUpError"
+         class="alert">
+        {{signUpErrorMessage}}
+    </div>
+    <div *ngIf="signUpSuccess"
+         class="successAlert">
+        {{signUpSuccessMessage}}
+    </div>
+
+
+    <button type="submit">Войти</button>
+    <button type="button" (click)="signUp()">Зарегистрироваться</button>
+</form>

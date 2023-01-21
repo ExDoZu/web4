@@ -1,0 +1,20 @@
+<table>
+    <thead class="tbl-header">
+    <th>Результат</th>
+    <th>X</th>
+    <th>Y</th>
+    <th>R</th>
+    <th>Время</th>
+    <th>Выполнение</th>
+    </thead>
+    <tbody class="tbl-content">
+    <tr *ngFor='let result of results'>
+        <td>{{ result.result }}</td>
+        <td>{{ result.x }}</td>
+        <td>{{ result.y }}</td>
+        <td>{{ result.r }}</td>
+        <td>{{ result.time }}</td>
+        <td>{{ result.execution/1000 }} мкс</td>
+    </tr>
+    </tbody>
+</table>

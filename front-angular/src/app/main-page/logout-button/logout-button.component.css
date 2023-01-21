@@ -1,0 +1,21 @@
+.logout-button {
+    float: right;
+    width: 100px;
+    height: 40px;
+    margin: 10px auto;
+    margin-left: 20px;
+    color: #000000;
+    background: rgb(50, 239, 240);
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+form {
+    width: 100%;
+}
